@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "UIDevice+AixCategory.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSComparisonResult result = iOS_VERSION_GREATER_THAN(@"8.0");
+    
+    if (iOS_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
+        NSLog(@"8.0以上");
+    }
+    
+    if ([[[UIDevice currentDevice] systemVersion] compare:@"8.0" options:NSNumericSearch] != NSOrderedAscending) {
+        
+        NSLog(@"8.0以上");
+    }
     return YES;
 }
 

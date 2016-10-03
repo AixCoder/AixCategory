@@ -13,6 +13,8 @@
 		F64BEBAA1D9E42EE004A1744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64BEBA81D9E42EE004A1744 /* Main.storyboard */; };
 		F64BEBAC1D9E42EE004A1744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64BEBAB1D9E42EE004A1744 /* Assets.xcassets */; };
 		F64BEBAF1D9E42EE004A1744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64BEBAD1D9E42EE004A1744 /* LaunchScreen.storyboard */; };
+		F64BEBBA1D9E4493004A1744 /* UIDevice+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F64BEBB91D9E4493004A1744 /* UIDevice+AixCategory.m */; };
+		F64BEBC21D9E53E8004A1744 /* UIApplication+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F64BEBC11D9E53E8004A1744 /* UIApplication+AixCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		F64BEBAB1D9E42EE004A1744 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F64BEBAE1D9E42EE004A1744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F64BEBB01D9E42EE004A1744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F64BEBB81D9E4493004A1744 /* UIDevice+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+AixCategory.h"; sourceTree = "<group>"; };
+		F64BEBB91D9E4493004A1744 /* UIDevice+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+AixCategory.m"; sourceTree = "<group>"; };
+		F64BEBC01D9E53E8004A1744 /* UIApplication+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+AixCategory.h"; sourceTree = "<group>"; };
+		F64BEBC11D9E53E8004A1744 /* UIApplication+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+AixCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,8 @@
 				F64BEBA31D9E42EE004A1744 /* AppDelegate.m */,
 				F64BEBA51D9E42EE004A1744 /* ViewController.h */,
 				F64BEBA61D9E42EE004A1744 /* ViewController.m */,
+				F64BEBB71D9E4411004A1744 /* UIKit */,
+				F64BEBB61D9E43E1004A1744 /* FoundationKit */,
 				F64BEBA81D9E42EE004A1744 /* Main.storyboard */,
 				F64BEBAB1D9E42EE004A1744 /* Assets.xcassets */,
 				F64BEBAD1D9E42EE004A1744 /* LaunchScreen.storyboard */,
@@ -77,6 +85,24 @@
 				F64BEBA01D9E42EE004A1744 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F64BEBB61D9E43E1004A1744 /* FoundationKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FoundationKit;
+			sourceTree = "<group>";
+		};
+		F64BEBB71D9E4411004A1744 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F64BEBB81D9E4493004A1744 /* UIDevice+AixCategory.h */,
+				F64BEBB91D9E4493004A1744 /* UIDevice+AixCategory.m */,
+				F64BEBC01D9E53E8004A1744 /* UIApplication+AixCategory.h */,
+				F64BEBC11D9E53E8004A1744 /* UIApplication+AixCategory.m */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +136,8 @@
 				TargetAttributes = {
 					F64BEB9B1D9E42EE004A1744 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 6C2R3R9CB5;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -150,8 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64BEBC21D9E53E8004A1744 /* UIApplication+AixCategory.m in Sources */,
 				F64BEBA71D9E42EE004A1744 /* ViewController.m in Sources */,
 				F64BEBA41D9E42EE004A1744 /* AppDelegate.m in Sources */,
+				F64BEBBA1D9E4493004A1744 /* UIDevice+AixCategory.m in Sources */,
 				F64BEBA11D9E42EE004A1744 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,10 +299,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6C2R3R9CB5;
 				INFOPLIST_FILE = AixCategorys/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cz001.AixCategorys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fbe829f5-ed57-44d4-ae97-834011b5a6f1";
+				PROVISIONING_PROFILE_SPECIFIER = "*";
 			};
 			name = Debug;
 		};
@@ -281,7 +314,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AixCategorys/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cz001.AixCategorys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
