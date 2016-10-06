@@ -19,9 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    NSComparisonResult result = iOS_VERSION_GREATER_THAN(@"8.0");
-    
+        
     if (iOS_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
         NSLog(@"8.0以上");
     }
@@ -30,6 +28,9 @@
         
         NSLog(@"8.0以上");
     }
+    
+    
+    BOOL isSim = [UIDevice currentDevice].isSimulator;
     return YES;
 }
 

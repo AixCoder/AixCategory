@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AixCategorys/AppDelegate.m"
-            timestampString = "496912098.434222"
+            filePath = "AixCategorys/UIKit/UIDevice+AixCategory.m"
+            timestampString = "497456292.327642"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "-isSimulator"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
