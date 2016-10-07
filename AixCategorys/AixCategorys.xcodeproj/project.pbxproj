@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6125C261DA773DE007DCEEA /* UIImage+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C251DA773DE007DCEEA /* UIImage+AixCategory.m */; };
+		F6125C291DA7787E007DCEEA /* UIView+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C281DA7787E007DCEEA /* UIView+AixCategory.m */; };
+		F6125C2C1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C2B1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m */; };
 		F64BEBA11D9E42EE004A1744 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F64BEBA01D9E42EE004A1744 /* main.m */; };
 		F64BEBA41D9E42EE004A1744 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F64BEBA31D9E42EE004A1744 /* AppDelegate.m */; };
 		F64BEBA71D9E42EE004A1744 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64BEBA61D9E42EE004A1744 /* ViewController.m */; };
@@ -18,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6125C241DA773DE007DCEEA /* UIImage+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AixCategory.h"; sourceTree = "<group>"; };
+		F6125C251DA773DE007DCEEA /* UIImage+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AixCategory.m"; sourceTree = "<group>"; };
+		F6125C271DA7787E007DCEEA /* UIView+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AixCategory.h"; sourceTree = "<group>"; };
+		F6125C281DA7787E007DCEEA /* UIView+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AixCategory.m"; sourceTree = "<group>"; };
+		F6125C2A1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+AixCatrgory.h"; sourceTree = "<group>"; };
+		F6125C2B1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+AixCatrgory.m"; sourceTree = "<group>"; };
 		F64BEB9C1D9E42EE004A1744 /* AixCategorys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AixCategorys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64BEBA01D9E42EE004A1744 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F64BEBA21D9E42EE004A1744 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +110,12 @@
 				F64BEBB91D9E4493004A1744 /* UIDevice+AixCategory.m */,
 				F64BEBC01D9E53E8004A1744 /* UIApplication+AixCategory.h */,
 				F64BEBC11D9E53E8004A1744 /* UIApplication+AixCategory.m */,
+				F6125C241DA773DE007DCEEA /* UIImage+AixCategory.h */,
+				F6125C251DA773DE007DCEEA /* UIImage+AixCategory.m */,
+				F6125C271DA7787E007DCEEA /* UIView+AixCategory.h */,
+				F6125C281DA7787E007DCEEA /* UIView+AixCategory.m */,
+				F6125C2A1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.h */,
+				F6125C2B1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -179,8 +194,11 @@
 			files = (
 				F64BEBC21D9E53E8004A1744 /* UIApplication+AixCategory.m in Sources */,
 				F64BEBA71D9E42EE004A1744 /* ViewController.m in Sources */,
+				F6125C261DA773DE007DCEEA /* UIImage+AixCategory.m in Sources */,
 				F64BEBA41D9E42EE004A1744 /* AppDelegate.m in Sources */,
 				F64BEBBA1D9E4493004A1744 /* UIDevice+AixCategory.m in Sources */,
+				F6125C291DA7787E007DCEEA /* UIView+AixCategory.m in Sources */,
+				F6125C2C1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m in Sources */,
 				F64BEBA11D9E42EE004A1744 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +360,7 @@
 				F64BEBB51D9E42EE004A1744 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

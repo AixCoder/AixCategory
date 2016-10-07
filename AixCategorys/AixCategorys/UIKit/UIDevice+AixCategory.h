@@ -21,10 +21,22 @@
 @property (nonatomic,readonly) BOOL isDevicePod;
 @property (nonatomic,readonly) BOOL isSimulator;
 
+
+/**
+ e.g. "iPhone6,1"
+ */
+@property (nonatomic,readonly) NSString *machineModel;
+
+/**
+ e.g. "iPhone 7" "ipad mini"
+ */
+@property (nonatomic,readonly) NSString *machineModelName;
+
 #pragma mark Disk Info
 
 @property (nonatomic ,readonly) int64_t diskSpace;
 @property (nonatomic, readonly) int64_t freeDiskSpace;
 @property (nonatomic, readonly) int64_t diskSpaceUsed;
+
 
 @end
