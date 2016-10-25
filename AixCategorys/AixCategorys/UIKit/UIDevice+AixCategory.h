@@ -24,6 +24,7 @@
 
 /**
  e.g. "iPhone6,1"
+ https://www.theiphonewiki.com/wiki/Models
  */
 @property (nonatomic,readonly) NSString *machineModel;
 

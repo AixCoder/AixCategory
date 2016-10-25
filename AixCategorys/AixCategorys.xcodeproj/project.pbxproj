@@ -10,6 +10,8 @@
 		F6125C261DA773DE007DCEEA /* UIImage+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C251DA773DE007DCEEA /* UIImage+AixCategory.m */; };
 		F6125C291DA7787E007DCEEA /* UIView+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C281DA7787E007DCEEA /* UIView+AixCategory.m */; };
 		F6125C2C1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C2B1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m */; };
+		F6125C2F1DA7C251007DCEEA /* UIColor+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C2E1DA7C251007DCEEA /* UIColor+AixCategory.m */; };
+		F6125C321DA7C35D007DCEEA /* NSString+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C311DA7C35D007DCEEA /* NSString+AixCategory.m */; };
 		F64BEBA11D9E42EE004A1744 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F64BEBA01D9E42EE004A1744 /* main.m */; };
 		F64BEBA41D9E42EE004A1744 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F64BEBA31D9E42EE004A1744 /* AppDelegate.m */; };
 		F64BEBA71D9E42EE004A1744 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64BEBA61D9E42EE004A1744 /* ViewController.m */; };
@@ -27,6 +29,10 @@
 		F6125C281DA7787E007DCEEA /* UIView+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AixCategory.m"; sourceTree = "<group>"; };
 		F6125C2A1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+AixCatrgory.h"; sourceTree = "<group>"; };
 		F6125C2B1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+AixCatrgory.m"; sourceTree = "<group>"; };
+		F6125C2D1DA7C251007DCEEA /* UIColor+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AixCategory.h"; sourceTree = "<group>"; };
+		F6125C2E1DA7C251007DCEEA /* UIColor+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AixCategory.m"; sourceTree = "<group>"; };
+		F6125C301DA7C35D007DCEEA /* NSString+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AixCategory.h"; sourceTree = "<group>"; };
+		F6125C311DA7C35D007DCEEA /* NSString+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AixCategory.m"; sourceTree = "<group>"; };
 		F64BEB9C1D9E42EE004A1744 /* AixCategorys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AixCategorys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64BEBA01D9E42EE004A1744 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F64BEBA21D9E42EE004A1744 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,6 +105,8 @@
 		F64BEBB61D9E43E1004A1744 /* FoundationKit */ = {
 			isa = PBXGroup;
 			children = (
+				F6125C301DA7C35D007DCEEA /* NSString+AixCategory.h */,
+				F6125C311DA7C35D007DCEEA /* NSString+AixCategory.m */,
 			);
 			path = FoundationKit;
 			sourceTree = "<group>";
@@ -116,6 +124,8 @@
 				F6125C281DA7787E007DCEEA /* UIView+AixCategory.m */,
 				F6125C2A1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.h */,
 				F6125C2B1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m */,
+				F6125C2D1DA7C251007DCEEA /* UIColor+AixCategory.h */,
+				F6125C2E1DA7C251007DCEEA /* UIColor+AixCategory.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -194,7 +204,9 @@
 			files = (
 				F64BEBC21D9E53E8004A1744 /* UIApplication+AixCategory.m in Sources */,
 				F64BEBA71D9E42EE004A1744 /* ViewController.m in Sources */,
+				F6125C321DA7C35D007DCEEA /* NSString+AixCategory.m in Sources */,
 				F6125C261DA773DE007DCEEA /* UIImage+AixCategory.m in Sources */,
+				F6125C2F1DA7C251007DCEEA /* UIColor+AixCategory.m in Sources */,
 				F64BEBA41D9E42EE004A1744 /* AppDelegate.m in Sources */,
 				F64BEBBA1D9E4493004A1744 /* UIDevice+AixCategory.m in Sources */,
 				F6125C291DA7787E007DCEEA /* UIView+AixCategory.m in Sources */,
