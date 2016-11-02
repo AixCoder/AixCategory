@@ -10,4 +10,6 @@
 
 @interface UIViewController (AixCategory)
 
++ (instancetype)aix_topViewController;
+
 @end

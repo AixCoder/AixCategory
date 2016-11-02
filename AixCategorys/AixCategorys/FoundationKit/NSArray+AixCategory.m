@@ -10,4 +10,12 @@
 
 @implementation NSArray (AixCategory)
 
+- (id)aix_safeObjectAtIndex:(NSUInteger)index
+{
+    if([self count] > 0 && [self count] > index)
+        return [self objectAtIndex:index];
+    else
+        return nil;
+}
+
 @end

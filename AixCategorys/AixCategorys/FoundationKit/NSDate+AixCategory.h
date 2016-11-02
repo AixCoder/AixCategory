@@ -10,4 +10,6 @@
 
 @interface NSDate (AixCategory)
 
+- (NSString*)aix_timeAgo;
+
 @end

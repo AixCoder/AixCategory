@@ -10,4 +10,44 @@
 
 @implementation NSMutableArray (AixCategory)
 
+- (id)aix_safeObjectAtIndex:(NSUInteger)index
+{
+    if([self count] > 0 && [self count] > index)
+        return [self objectAtIndex:index];
+    else
+        return nil;
+}
+
+- (void)aix_moveObjectFromIndex:(NSUInteger)from toIndex:(NSUInteger)to
+{
+    if(to != from)
+    {
+        if (from > self.count) {
+            return;
+        }
+        
+        id obj = [self aix_safeObjectAtIndex:from];
+        [self removeObjectAtIndex:from];
+        
+        if(to >= [self count])
+            [self addObject:obj];
+        else
+            [self insertObject:obj atIndex:to];
+    }
+}
+
+- (void)aix_safeAddObject:(id)obj
+{
+    if (obj) {
+        [self addObject:obj];
+    }
+}
+
+- (void)aix_safeInsertObject:(id)obj atIndex:(NSUInteger)index
+{
+    if (obj) {
+        [self insertObject:obj atIndex:index];
+    }
+}
+
 @end

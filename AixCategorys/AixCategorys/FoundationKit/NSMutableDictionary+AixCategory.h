@@ -10,4 +10,6 @@
 
 @interface NSMutableDictionary (AixCategory)
 
+- (void)aix_safeSetObject:(id)obj forKey:(NSString*)key;
+
 @end

@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 
 @interface NSBundle (AixCategory)
+
+- (NSString*)aix_appIconPath;
+- (UIImage*)aix_appIcon;
 
 @end

@@ -10,4 +10,14 @@
 
 @interface NSMutableArray (AixCategory)
 
+- (id)aix_safeObjectAtIndex:(NSUInteger)index;
+
+- (void)aix_moveObjectFromIndex:(NSUInteger)from
+                    toIndex:(NSUInteger)to;
+
+- (void)aix_safeAddObject:(id)obj;
+
+- (void)aix_safeInsertObject:(id)obj atIndex:(NSUInteger)index;
+
+
 @end

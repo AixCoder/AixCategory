@@ -10,4 +10,6 @@
 
 @interface NSArray (AixCategory)
 
+- (id)aix_safeObjectAtIndex:(NSUInteger)index;
+
 @end

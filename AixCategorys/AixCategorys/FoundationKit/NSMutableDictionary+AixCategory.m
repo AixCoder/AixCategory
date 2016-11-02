@@ -10,4 +10,11 @@
 
 @implementation NSMutableDictionary (AixCategory)
 
+- (void)aix_safeSetObject:(id)obj forKey:(NSString *)key
+{
+    if (obj) {
+        self[key] = obj;
+    }
+}
+
 @end
