@@ -13,6 +13,8 @@
 		F6125C2F1DA7C251007DCEEA /* UIColor+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C2E1DA7C251007DCEEA /* UIColor+AixCategory.m */; };
 		F6125C321DA7C35D007DCEEA /* NSString+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C311DA7C35D007DCEEA /* NSString+AixCategory.m */; };
 		F614FB3B1DCA0A41000C1442 /* UIWindow+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F614FB3A1DCA0A41000C1442 /* UIWindow+AixCategory.m */; };
+		F614FB761DCA1D25000C1442 /* UIActionSheet+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F614FB751DCA1D25000C1442 /* UIActionSheet+AixCategory.m */; };
+		F614FB7C1DCA2233000C1442 /* AixDebugLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F614FB7B1DCA2233000C1442 /* AixDebugLog.m */; };
 		F64BEBA11D9E42EE004A1744 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F64BEBA01D9E42EE004A1744 /* main.m */; };
 		F64BEBA41D9E42EE004A1744 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F64BEBA31D9E42EE004A1744 /* AppDelegate.m */; };
 		F64BEBA71D9E42EE004A1744 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64BEBA61D9E42EE004A1744 /* ViewController.m */; };
@@ -45,6 +47,10 @@
 		F614FB3A1DCA0A41000C1442 /* UIWindow+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+AixCategory.m"; sourceTree = "<group>"; };
 		F614FB3F1DCA1206000C1442 /* AixCategorysHeads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AixCategorysHeads.h; sourceTree = "<group>"; };
 		F614FB421DCA12BD000C1442 /* AixCategorysMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AixCategorysMacro.h; sourceTree = "<group>"; };
+		F614FB741DCA1D25000C1442 /* UIActionSheet+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+AixCategory.h"; sourceTree = "<group>"; };
+		F614FB751DCA1D25000C1442 /* UIActionSheet+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+AixCategory.m"; sourceTree = "<group>"; };
+		F614FB7A1DCA2233000C1442 /* AixDebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AixDebugLog.h; sourceTree = "<group>"; };
+		F614FB7B1DCA2233000C1442 /* AixDebugLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AixDebugLog.m; sourceTree = "<group>"; };
 		F64BEB9C1D9E42EE004A1744 /* AixCategorys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AixCategorys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64BEBA01D9E42EE004A1744 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F64BEBA21D9E42EE004A1744 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +117,8 @@
 				F64BEBA61D9E42EE004A1744 /* ViewController.m */,
 				F614FB3F1DCA1206000C1442 /* AixCategorysHeads.h */,
 				F614FB421DCA12BD000C1442 /* AixCategorysMacro.h */,
+				F614FB7A1DCA2233000C1442 /* AixDebugLog.h */,
+				F614FB7B1DCA2233000C1442 /* AixDebugLog.m */,
 				F64BEBB71D9E4411004A1744 /* UIKit */,
 				F64BEBB61D9E43E1004A1744 /* FoundationKit */,
 				F64BEBA81D9E42EE004A1744 /* Main.storyboard */,
@@ -170,6 +178,8 @@
 				F6D05EE41DBF80EF00B1055C /* UIViewController+AixCategory.m */,
 				F614FB391DCA0A41000C1442 /* UIWindow+AixCategory.h */,
 				F614FB3A1DCA0A41000C1442 /* UIWindow+AixCategory.m */,
+				F614FB741DCA1D25000C1442 /* UIActionSheet+AixCategory.h */,
+				F614FB751DCA1D25000C1442 /* UIActionSheet+AixCategory.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -252,10 +262,12 @@
 				F6D05EEB1DBF824B00B1055C /* NSData+AixCategory.m in Sources */,
 				F64BEBA71D9E42EE004A1744 /* ViewController.m in Sources */,
 				F6125C321DA7C35D007DCEEA /* NSString+AixCategory.m in Sources */,
+				F614FB761DCA1D25000C1442 /* UIActionSheet+AixCategory.m in Sources */,
 				F6125C261DA773DE007DCEEA /* UIImage+AixCategory.m in Sources */,
 				F6125C2F1DA7C251007DCEEA /* UIColor+AixCategory.m in Sources */,
 				F6D05EF41DBF902300B1055C /* NSBundle+AixCategory.m in Sources */,
 				F64BEBA41D9E42EE004A1744 /* AppDelegate.m in Sources */,
+				F614FB7C1DCA2233000C1442 /* AixDebugLog.m in Sources */,
 				F6D05EF11DBF8FB200B1055C /* NSMutableDictionary+AixCategory.m in Sources */,
 				F6D05EE81DBF81EF00B1055C /* NSArray+AixCategory.m in Sources */,
 				F64BEBBA1D9E4493004A1744 /* UIDevice+AixCategory.m in Sources */,
