@@ -50,4 +50,13 @@
     }
 }
 
+- (void)x_shuffle
+{
+    for (NSUInteger i = self.count; i > 1; i--) {
+        
+        [self exchangeObjectAtIndex:(i -1) withObjectAtIndex:arc4random_uniform((u_int32_t)i)];
+                                                                                
+    }
+}
+
 @end

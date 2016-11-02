@@ -266,4 +266,29 @@
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
+- (CGFloat)x_heightForFont:(UIFont *)font width:(CGFloat)width
+{
+    CGSize result;
+    if (!font) {
+        font = [UIFont systemFontOfSize:12];
+    }
+    
+    if ([self respondsToSelector:@selector(boundingRectWithSize:options:attributes:context:)]) {
+        
+        NSMutableDictionary *attr = @{}.mutableCopy;
+        attr[NSFontAttributeName] = font;
+        
+        CGRect rect = [self boundingRectWithSize:CGSizeMake(width, HUGE) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attr context:nil];
+        
+        result = rect.size;
+    }else{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        result = [self sizeWithFont:font constrainedToSize:CGSizeMake(width, HUGE) lineBreakMode:NSLineBreakByWordWrapping];
+#pragma clang diagnostic pop
+    }
+    
+    return result.height;
+}
+
 @end

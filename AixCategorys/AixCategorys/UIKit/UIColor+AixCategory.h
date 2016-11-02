@@ -10,6 +10,6 @@
 
 @interface UIColor (AixCategory)
 
-+ (nullable UIColor*)aix_colorWithHexString:(NSString *)hexString;
++ (nullable UIColor*)aix_colorWithHexString:(NSString * _Nonnull)hexString;
 
 @end

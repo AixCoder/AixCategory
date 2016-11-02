@@ -19,5 +19,5 @@
 
 - (void)aix_safeInsertObject:(id)obj atIndex:(NSUInteger)index;
 
-
+- (void)x_shuffle;
 @end

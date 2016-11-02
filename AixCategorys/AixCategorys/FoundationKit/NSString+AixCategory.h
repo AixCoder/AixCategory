@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 
 @interface NSString (AixCategory)
 
@@ -48,6 +49,8 @@
  */
 - (NSString*)aix_trimmingWhitespace;
 - (NSString*)aix_trimmingWhitespaceAndNewlines;
+
+- (CGFloat)x_heightForFont:(UIFont*)font width:(CGFloat)width;
 
 
 @end

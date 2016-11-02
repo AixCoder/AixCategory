@@ -20,6 +20,7 @@
 @property (nonatomic,readonly) BOOL isDevicePad;
 @property (nonatomic,readonly) BOOL isDevicePod;
 @property (nonatomic,readonly) BOOL isSimulator;
+@property (nonatomic,readonly) BOOL isAppleWatch;
 
 
 /**
@@ -39,5 +40,6 @@
 @property (nonatomic, readonly) int64_t freeDiskSpace;
 @property (nonatomic, readonly) int64_t diskSpaceUsed;
 
+@property (nonatomic,readonly) float CPUUsage;
 
 @end
