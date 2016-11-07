@@ -138,6 +138,15 @@
     return self.isEmpty? NO : YES;
 }
 
+- (BOOL)isNormal
+{
+    NSString *		regex = @"([^%&',;=!~?$]+)";
+    NSPredicate *	pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
+    
+    return [pred evaluateWithObject:self];
+
+}
+
 - (BOOL)isTelephone
 {
     NSString * MOBILE = @"^1(3[0-9]|5[0-35-9]|8[025-9])\\d{8}$";
@@ -192,7 +201,7 @@
 
 - (BOOL)isPassword
 {
-    NSString *		regex = @"(^[A-Za-z0-9]{6,20}$)";
+    NSString *		regex = @"(^[A-Za-z0-9]{3,20}$)";
     NSPredicate *	pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     
     return [pred evaluateWithObject:self];

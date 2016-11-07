@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 void ExtendNSLog(const char *file, int lineNumber, const char *functionName, NSString *format, ...);
 
 @interface AixDebugLog : NSObject

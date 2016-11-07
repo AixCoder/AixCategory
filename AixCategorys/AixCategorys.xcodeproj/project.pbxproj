@@ -23,6 +23,7 @@
 		F64BEBAF1D9E42EE004A1744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64BEBAD1D9E42EE004A1744 /* LaunchScreen.storyboard */; };
 		F64BEBBA1D9E4493004A1744 /* UIDevice+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F64BEBB91D9E4493004A1744 /* UIDevice+AixCategory.m */; };
 		F64BEBC21D9E53E8004A1744 /* UIApplication+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F64BEBC11D9E53E8004A1744 /* UIApplication+AixCategory.m */; };
+		F6C6DB1B1DCB0371001FC5EA /* UIGestureRecognizer+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C6DB1A1DCB0371001FC5EA /* UIGestureRecognizer+AixCategory.m */; };
 		F6D05EE51DBF80EF00B1055C /* UIViewController+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D05EE41DBF80EF00B1055C /* UIViewController+AixCategory.m */; };
 		F6D05EE81DBF81EF00B1055C /* NSArray+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D05EE71DBF81EF00B1055C /* NSArray+AixCategory.m */; };
 		F6D05EEB1DBF824B00B1055C /* NSData+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D05EEA1DBF824B00B1055C /* NSData+AixCategory.m */; };
@@ -65,6 +66,8 @@
 		F64BEBB91D9E4493004A1744 /* UIDevice+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+AixCategory.m"; sourceTree = "<group>"; };
 		F64BEBC01D9E53E8004A1744 /* UIApplication+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+AixCategory.h"; sourceTree = "<group>"; };
 		F64BEBC11D9E53E8004A1744 /* UIApplication+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+AixCategory.m"; sourceTree = "<group>"; };
+		F6C6DB191DCB0371001FC5EA /* UIGestureRecognizer+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+AixCategory.h"; sourceTree = "<group>"; };
+		F6C6DB1A1DCB0371001FC5EA /* UIGestureRecognizer+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+AixCategory.m"; sourceTree = "<group>"; };
 		F6D05EE31DBF80EF00B1055C /* UIViewController+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AixCategory.h"; sourceTree = "<group>"; };
 		F6D05EE41DBF80EF00B1055C /* UIViewController+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AixCategory.m"; sourceTree = "<group>"; };
 		F6D05EE61DBF81EF00B1055C /* NSArray+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+AixCategory.h"; sourceTree = "<group>"; };
@@ -180,6 +183,8 @@
 				F614FB3A1DCA0A41000C1442 /* UIWindow+AixCategory.m */,
 				F614FB741DCA1D25000C1442 /* UIActionSheet+AixCategory.h */,
 				F614FB751DCA1D25000C1442 /* UIActionSheet+AixCategory.m */,
+				F6C6DB191DCB0371001FC5EA /* UIGestureRecognizer+AixCategory.h */,
+				F6C6DB1A1DCB0371001FC5EA /* UIGestureRecognizer+AixCategory.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 				F6125C321DA7C35D007DCEEA /* NSString+AixCategory.m in Sources */,
 				F614FB761DCA1D25000C1442 /* UIActionSheet+AixCategory.m in Sources */,
 				F6125C261DA773DE007DCEEA /* UIImage+AixCategory.m in Sources */,
+				F6C6DB1B1DCB0371001FC5EA /* UIGestureRecognizer+AixCategory.m in Sources */,
 				F6125C2F1DA7C251007DCEEA /* UIColor+AixCategory.m in Sources */,
 				F6D05EF41DBF902300B1055C /* NSBundle+AixCategory.m in Sources */,
 				F64BEBA41D9E42EE004A1744 /* AppDelegate.m in Sources */,

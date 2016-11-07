@@ -16,6 +16,8 @@
 #import "UIColor+AixCategory.h"
 #import "UIViewController+AixCategory.h"
 #import "UIWindow+AixCategory.h"
+#import "UIActionSheet+AixCategory.h"
+#import "UIGestureRecognizer+AixCategory.h"
 
 #import "NSString+AixCategory.h"
 #import "NSArray+AixCategory.h"
