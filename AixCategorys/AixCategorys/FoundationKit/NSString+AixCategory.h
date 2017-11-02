@@ -33,14 +33,26 @@
 - (BOOL)isPassword;
 - (BOOL)isEmail;
 - (BOOL)isWebURL;
+- (BOOL)isValidPostalcode;// *  邮政编码
+
 - (BOOL)isIPAddress;
+
+/**
+ 获得汉字的拼音
+ 
+ @param chinese 汉字
+ @return 拼音
+ */
++ (NSString *)x_transform:(NSString *)chinese;
+
+//验证身份证号码是否有效
++ (BOOL)aix_judgeIdCardNumberStringValid:(NSString*)identityString;
 
 - (NSString *)aix_encodeToBase64;
 - (NSString *)aix_decodeBase64;
 
 - (NSString*)aix_URLEncode;
 - (NSString*)aix_URLDecode;
-
 
 /**
  过滤掉空格
@@ -54,3 +66,12 @@
 
 
 @end
+
+@interface NSString (FilePath)
+
++ (NSURL *)documentsURL;
++ (NSString *)documentsPath;
+
+@end
+
+

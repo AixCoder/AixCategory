@@ -11,6 +11,13 @@
 @interface UIImage (AixCategory)
 
 + (nullable UIImage *)aix_appLaunchImage;
+//截屏
++(nullable UIImage*)aix_snapshotCurrentScreen;
+//圆形图片
++ (UIImage *)aix_GetRoundImagewithImage:(UIImage *)image;
+
+//图片模糊效果
+- (UIImage *)x_blur;
 
 - (nullable UIImage*)x_imageByRotateLeft90;
 - (nullable UIImage*)x_imageByRotateRight90;
@@ -29,5 +36,6 @@
                                tintMode:(CGBlendMode)tintBlendMode
                              saturation:(CGFloat)saturation
                               maskImage:(nullable UIImage *)maskImage;
+
 
 @end

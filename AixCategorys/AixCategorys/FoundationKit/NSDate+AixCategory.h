@@ -10,8 +10,6 @@
 
 @interface NSDate (AixCategory)
 
-- (NSString*)aix_timeAgo;
-
-
+- (NSString *)x_timeAgo;// * 返回x分钟前/x小时前/昨天/x天前/x个月前/x年前
 
 @end

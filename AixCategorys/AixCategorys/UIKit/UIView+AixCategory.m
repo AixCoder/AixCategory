@@ -9,6 +9,12 @@
 #import "UIView+AixCategory.h"
 #import <objc/runtime.h>
 
+static char kActionHandlerTapBlockKey;
+static char kActionHandlerTapGestureKey;
+
+static char kActionHandlerLongPressGestureKey;
+static char kActionHandlerLongPressBlockKey;
+
 static char touchExtendInsetKey;
 
 void AixSwizzle(Class c, SEL orig, SEL new) {
@@ -58,6 +64,74 @@ void AixSwizzle(Class c, SEL orig, SEL new) {
     }
     
     return nil;
+}
+
+- (UIImage *)x_snapshotImage
+{
+    
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, YES, 0);
+    
+    [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:YES];
+    
+    UIImage *result = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return result;
+}
+
+- (void)x_addTapActionWithBlock:(TapActionBlock)block
+{
+    UITapGestureRecognizer *gesture = objc_getAssociatedObject(self, &kActionHandlerTapGestureKey);
+    if (!gesture)
+    {
+        gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleActionForTapGesture:)];
+        [self addGestureRecognizer:gesture];
+        objc_setAssociatedObject(self, &kActionHandlerTapGestureKey, gesture, OBJC_ASSOCIATION_RETAIN);
+    }
+    objc_setAssociatedObject(self, &kActionHandlerTapBlockKey, block, OBJC_ASSOCIATION_COPY);
+}
+
+- (void)x_addLongPressActionWithBlock:(LongPressActionBlock)block
+{
+    UILongPressGestureRecognizer *gesture = objc_getAssociatedObject(self, &kActionHandlerLongPressGestureKey);
+    if (!gesture)
+    {
+        gesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleActionForLongPressGesture:)];
+        [self addGestureRecognizer:gesture];
+        objc_setAssociatedObject(self, &kActionHandlerLongPressGestureKey, gesture, OBJC_ASSOCIATION_RETAIN);
+    }
+    objc_setAssociatedObject(self, &kActionHandlerLongPressBlockKey, block, OBJC_ASSOCIATION_COPY);
+}
+
+
+- (void)handleActionForTapGesture:(UITapGestureRecognizer *)gesture
+{
+    if (gesture.state == UIGestureRecognizerStateRecognized)
+    {
+        TapActionBlock block = objc_getAssociatedObject(self, &kActionHandlerTapBlockKey);
+        if (block)
+        {
+            block(gesture);
+        }
+    }
+}
+
+- (void)handleActionForLongPressGesture:(UILongPressGestureRecognizer *)gesture
+{
+    if (gesture.state == UIGestureRecognizerStateRecognized)
+    {
+        LongPressActionBlock block = objc_getAssociatedObject(self, &kActionHandlerLongPressBlockKey);
+        if (block)
+        {
+            block(gesture);
+        }
+    }
+}
+
+- (void)x_removeAllSubviews
+{
+    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
 }
 
 @end

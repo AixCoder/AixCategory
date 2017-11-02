@@ -8,11 +8,29 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^TapActionBlock)(UITapGestureRecognizer *gestureRecoginzer);
+typedef void (^LongPressActionBlock)(UILongPressGestureRecognizer *gestureRecoginzer);
+
 @interface UIView (AixCategory)
 
 @property (nonatomic)UIEdgeInsets touchExtendInset;//扩大视图点击面积
 
 @property (nonatomic,readonly) UIViewController *viewController;
+
+//截取成图片
+- (UIImage *)x_snapshotImage;
+
+- (void)x_addTapActionWithBlock:(TapActionBlock)block;
+
+/**
+ *  @brief  添加长按手势
+ *
+ *  @param block 代码块
+ */
+- (void)x_addLongPressActionWithBlock:(LongPressActionBlock)block;
+
+//移除所有子视图
+- (void)x_removeAllSubviews;
 
 @end
 
