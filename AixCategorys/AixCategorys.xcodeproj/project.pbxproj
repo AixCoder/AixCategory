@@ -11,6 +11,7 @@
 		CE360FCF1FA844DA001E4733 /* UIImageView+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE360FCE1FA844DA001E4733 /* UIImageView+AixCategory.m */; };
 		CE360FD21FA84626001E4733 /* UILabel+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE360FD11FA84626001E4733 /* UILabel+AixCategory.m */; };
 		CE360FD51FA847DA001E4733 /* UINavigationController+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE360FD41FA847DA001E4733 /* UINavigationController+AixCategory.m */; };
+		CE80C5DF1FB0322E00178B07 /* NSNumber+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80C5DE1FB0322E00178B07 /* NSNumber+AixCategory.m */; };
 		F6125C261DA773DE007DCEEA /* UIImage+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C251DA773DE007DCEEA /* UIImage+AixCategory.m */; };
 		F6125C291DA7787E007DCEEA /* UIView+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C281DA7787E007DCEEA /* UIView+AixCategory.m */; };
 		F6125C2C1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C2B1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m */; };
@@ -48,6 +49,8 @@
 		CE360FD11FA84626001E4733 /* UILabel+AixCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AixCategory.m"; sourceTree = "<group>"; };
 		CE360FD31FA847DA001E4733 /* UINavigationController+AixCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+AixCategory.h"; sourceTree = "<group>"; };
 		CE360FD41FA847DA001E4733 /* UINavigationController+AixCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+AixCategory.m"; sourceTree = "<group>"; };
+		CE80C5DD1FB0322E00178B07 /* NSNumber+AixCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+AixCategory.h"; sourceTree = "<group>"; };
+		CE80C5DE1FB0322E00178B07 /* NSNumber+AixCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+AixCategory.m"; sourceTree = "<group>"; };
 		F6125C241DA773DE007DCEEA /* UIImage+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AixCategory.h"; sourceTree = "<group>"; };
 		F6125C251DA773DE007DCEEA /* UIImage+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AixCategory.m"; sourceTree = "<group>"; };
 		F6125C271DA7787E007DCEEA /* UIView+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AixCategory.h"; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 				F6D05EF61DBF911D00B1055C /* NSDate+AixCategory.m */,
 				F66AF5001DEFDE1E001EDF19 /* NSDictionary+AixCategory.h */,
 				F66AF5011DEFDE1E001EDF19 /* NSDictionary+AixCategory.m */,
+				CE80C5DD1FB0322E00178B07 /* NSNumber+AixCategory.h */,
+				CE80C5DE1FB0322E00178B07 /* NSNumber+AixCategory.m */,
 			);
 			path = FoundationKit;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 				CE360FCF1FA844DA001E4733 /* UIImageView+AixCategory.m in Sources */,
 				F6D05EEB1DBF824B00B1055C /* NSData+AixCategory.m in Sources */,
 				CE360FD21FA84626001E4733 /* UILabel+AixCategory.m in Sources */,
+				CE80C5DF1FB0322E00178B07 /* NSNumber+AixCategory.m in Sources */,
 				F64BEBA71D9E42EE004A1744 /* ViewController.m in Sources */,
 				F6125C321DA7C35D007DCEEA /* NSString+AixCategory.m in Sources */,
 				F614FB761DCA1D25000C1442 /* UIActionSheet+AixCategory.m in Sources */,

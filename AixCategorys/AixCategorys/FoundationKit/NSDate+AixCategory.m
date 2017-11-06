@@ -15,6 +15,18 @@ NSLocalizedStringFromTableInBundle(key, @"NSDateTimeAgo", [NSBundle bundleWithPa
 
 @implementation NSDate (AixCategory)
 
+- (NSInteger)x_year {
+    return [[[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:self] year];
+}
+
+- (NSInteger)x_month {
+    return [[[NSCalendar currentCalendar] components:NSCalendarUnitMonth fromDate:self] month];
+}
+
+- (NSInteger)x_day {
+    return [[[NSCalendar currentCalendar] components:NSCalendarUnitDay fromDate:self] day];
+}
+
 - (NSString *)aix_timeAgo
 {
     NSDate *now = [NSDate date];
