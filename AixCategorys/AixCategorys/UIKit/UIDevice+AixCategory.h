@@ -41,5 +41,9 @@
 @property (nonatomic, readonly) int64_t diskSpaceUsed;
 
 @property (nonatomic,readonly) float CPUUsage;
+#pragma mark memory
+/// Free memory in byte. (-1 when error occurs)
+@property (nonatomic, readonly) int64_t memoryFree;
+
 
 @end

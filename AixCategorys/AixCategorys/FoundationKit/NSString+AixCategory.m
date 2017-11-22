@@ -414,4 +414,15 @@
 }
 
 
+- (NSURL *)cachesURL {
+    return [[[NSFileManager defaultManager]
+             URLsForDirectory:NSCachesDirectory
+             inDomains:NSUserDomainMask] lastObject];
+}
+
+- (NSString *)cachesPath {
+    return [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+}
+
+
 @end
