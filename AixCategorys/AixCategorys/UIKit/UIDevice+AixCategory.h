@@ -14,6 +14,10 @@
 #define iOS_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 #define iOS_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 
+#define kUISCREEN_WIDTH          ([UIScreen mainScreen].bounds.size.width)
+#define kUISCREEN_HEIGHT         ([UIScreen mainScreen].bounds.size.height)
+#define iPhoneX     (kUISCREEN_WIDTH == 375.f && kUISCREEN_HEIGHT == 812.f)
+
 @interface UIDevice (AixCategory)
 
 @property (nonatomic,readonly) BOOL isDevicePhone;
@@ -44,6 +48,5 @@
 #pragma mark memory
 /// Free memory in byte. (-1 when error occurs)
 @property (nonatomic, readonly) int64_t memoryFree;
-
 
 @end
