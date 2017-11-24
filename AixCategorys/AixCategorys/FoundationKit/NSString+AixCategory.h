@@ -26,7 +26,8 @@
 - (BOOL)isNormal;
 
 - (BOOL)isTelephone;    // match telephone
-- (BOOL)isMobilephone;  // match mobilephone, 11 numberic
+- (BOOL)x_isMobilePhone;//手机号判断，粗略判断
+- (BOOL)x_isRealMobilephone;  //手机号判断（精确判断真实性）
 - (BOOL)isUserName;     // match alphabet 3-20
 - (BOOL)isChineseUserName;  // match alphabet and chinese characters, 3-20
 - (BOOL)isPureChineseName;// match just chinese characters 2-16
@@ -34,6 +35,8 @@
 - (BOOL)isEmail;
 - (BOOL)isWebURL;
 - (BOOL)isValidPostalcode;// *  邮政编码
+- (BOOL)x_isCarNumberPlate;
+
 
 - (BOOL)isIPAddress;
 
