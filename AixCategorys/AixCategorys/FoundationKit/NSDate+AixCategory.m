@@ -96,6 +96,14 @@ NSLocalizedStringFromTableInBundle(key, @"NSDateTimeAgo", [NSBundle bundleWithPa
     return [self aix_stringFromFormat:@"%%d %@years ago" withValue:minutes];
 }
 
+- (NSString *)x_timestamp
+{
+    NSDate* date = [NSDate dateWithTimeIntervalSinceNow:0];
+    NSTimeInterval a=[date timeIntervalSince1970];
+    NSString *timeString = [NSString stringWithFormat:@"%d", (int)a];//时间戳字符串
+    return timeString;
+}
+
 - (NSString *)aix_stringFromFormat:(NSString *)format withValue:(NSInteger)value
 {
     NSString * localeFormat = [NSString stringWithFormat:format, [self getLocaleFormatUnderscoresWithValue:value]];
