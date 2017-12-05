@@ -11,6 +11,6 @@
 @interface NSNumber (AixCategory)
 
 
-+ (nullable NSNumber *)x_numberWithString:(NSString *)string;
++ (nullable NSNumber *)x_numberWithString:(NSString * _Nonnull)string;
 
 @end

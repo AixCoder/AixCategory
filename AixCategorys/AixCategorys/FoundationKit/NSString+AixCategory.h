@@ -54,6 +54,8 @@
 - (NSString *)aix_encodeToBase64;
 - (NSString *)aix_decodeBase64;
 
+- (NSString *)x_encodeToGMBase64;//用Google的base64,因为系统提供的base64发现加密后的数据有时候有换行
+
 - (NSString*)aix_URLEncode;
 - (NSString*)aix_URLDecode;
 
@@ -64,7 +66,6 @@
  */
 - (NSString*)aix_trimmingWhitespace;
 - (NSString*)aix_trimmingWhitespaceAndNewlines;
-
 - (CGFloat)x_heightForFont:(UIFont*)font width:(CGFloat)width;
 
 
