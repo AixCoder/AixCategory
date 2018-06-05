@@ -453,7 +453,7 @@
 
 + (NSString *)pathForDirectory:(NSSearchPathDirectory)directory
 {
-    return NSSearchPathForDirectoriesInDomains(directory, NSUserDomainMask, YES)[0];
+    return NSSearchPathForDirectoriesInDomains(directory, NSUserDomainMask, YES).firstObject;
 }
 
 

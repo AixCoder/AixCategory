@@ -15,7 +15,6 @@
 @property (nonatomic, readonly) NSDate   * date;
 
 @property (nonatomic, readonly) NSString * MD5;
-@property (nonatomic, readonly) NSData   * MD5Data;//todo
 
 @property (nonatomic, readonly) NSString * SHA1;
 @property (nonatomic,readonly ) NSString * SHA256;

@@ -15,10 +15,10 @@
 + (nullable NSNumber *)x_numberWithString:(NSString *)string
 {
     NSString *str = [[string aix_trimmingWhitespaceAndNewlines] lowercaseString];
-    if (!str || !str.length) {
+    if ([str isEmpty]) {
         return nil;
     }
-    
+
     static NSDictionary *dic;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

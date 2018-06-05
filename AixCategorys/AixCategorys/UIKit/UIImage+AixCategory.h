@@ -14,10 +14,10 @@
 //截屏
 +(nullable UIImage*)aix_snapshotCurrentScreen;
 //圆形图片
-+ (UIImage *)aix_GetRoundImagewithImage:(UIImage *)image;
++ (UIImage *_Nullable)aix_GetRoundImagewithImage:(UIImage *_Nullable)image;
 
 //图片模糊效果
-- (UIImage *)x_blur;
+- (UIImage *_Nullable)x_blur;
 
 - (nullable UIImage*)x_imageByRotateLeft90;
 - (nullable UIImage*)x_imageByRotateRight90;
