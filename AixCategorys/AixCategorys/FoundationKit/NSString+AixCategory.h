@@ -25,7 +25,7 @@
 - (BOOL)isNormal;
 
 - (BOOL)isTelephone;    // match telephone
-- (BOOL)x_isMobilePhone;//手机号判断，粗略判断
+- (BOOL)x_isMobilephone;//手机号判断，粗略判断
 - (BOOL)x_isRealMobilephone;  //手机号判断（精确判断真实性）
 - (BOOL)isUserName;     // match alphabet 3-20
 - (BOOL)isChineseUserName;  // match alphabet and chinese characters, 3-20
