@@ -11,7 +11,9 @@
 		CE360FCF1FA844DA001E4733 /* UIImageView+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE360FCE1FA844DA001E4733 /* UIImageView+AixCategory.m */; };
 		CE360FD21FA84626001E4733 /* UILabel+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE360FD11FA84626001E4733 /* UILabel+AixCategory.m */; };
 		CE360FD51FA847DA001E4733 /* UINavigationController+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE360FD41FA847DA001E4733 /* UINavigationController+AixCategory.m */; };
+		CE4417FE1FC80BCF006FEF52 /* UIScrollView+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4417FD1FC80BCF006FEF52 /* UIScrollView+AixCategory.m */; };
 		CE80C5DF1FB0322E00178B07 /* NSNumber+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80C5DE1FB0322E00178B07 /* NSNumber+AixCategory.m */; };
+		CEC56F101FD62ACC003D993C /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC56F0E1FD62ACC003D993C /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F6125C261DA773DE007DCEEA /* UIImage+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C251DA773DE007DCEEA /* UIImage+AixCategory.m */; };
 		F6125C291DA7787E007DCEEA /* UIView+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C281DA7787E007DCEEA /* UIView+AixCategory.m */; };
 		F6125C2C1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C2B1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m */; };
@@ -49,8 +51,13 @@
 		CE360FD11FA84626001E4733 /* UILabel+AixCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AixCategory.m"; sourceTree = "<group>"; };
 		CE360FD31FA847DA001E4733 /* UINavigationController+AixCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+AixCategory.h"; sourceTree = "<group>"; };
 		CE360FD41FA847DA001E4733 /* UINavigationController+AixCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+AixCategory.m"; sourceTree = "<group>"; };
+		CE4417FC1FC80BCF006FEF52 /* UIScrollView+AixCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+AixCategory.h"; sourceTree = "<group>"; };
+		CE4417FD1FC80BCF006FEF52 /* UIScrollView+AixCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+AixCategory.m"; sourceTree = "<group>"; };
 		CE80C5DD1FB0322E00178B07 /* NSNumber+AixCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+AixCategory.h"; sourceTree = "<group>"; };
 		CE80C5DE1FB0322E00178B07 /* NSNumber+AixCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+AixCategory.m"; sourceTree = "<group>"; };
+		CEC56F0D1FD62ACC003D993C /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		CEC56F0E1FD62ACC003D993C /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		CEC56F0F1FD62ACC003D993C /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		F6125C241DA773DE007DCEEA /* UIImage+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AixCategory.h"; sourceTree = "<group>"; };
 		F6125C251DA773DE007DCEEA /* UIImage+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AixCategory.m"; sourceTree = "<group>"; };
 		F6125C271DA7787E007DCEEA /* UIView+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AixCategory.h"; sourceTree = "<group>"; };
@@ -116,6 +123,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CEC56F0B1FD62AB2003D993C /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				CEC56F0C1FD62ACC003D993C /* GTMBase64 */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		CEC56F0C1FD62ACC003D993C /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				CEC56F0D1FD62ACC003D993C /* GTMBase64.h */,
+				CEC56F0E1FD62ACC003D993C /* GTMBase64.m */,
+				CEC56F0F1FD62ACC003D993C /* GTMDefines.h */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
 		F64BEB931D9E42EE004A1744 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +168,7 @@
 				F614FB421DCA12BD000C1442 /* AixCategorysMacro.h */,
 				F614FB7A1DCA2233000C1442 /* AixDebugLog.h */,
 				F614FB7B1DCA2233000C1442 /* AixDebugLog.m */,
+				CEC56F0B1FD62AB2003D993C /* ThirdParty */,
 				F64BEBB71D9E4411004A1744 /* UIKit */,
 				F64BEBB61D9E43E1004A1744 /* FoundationKit */,
 				F64BEBA81D9E42EE004A1744 /* Main.storyboard */,
@@ -220,6 +246,8 @@
 				F65FF7CE1E1D187C00F7B1C8 /* UIControl+AixCategory.m */,
 				CE0290581FAB48A90028752F /* UIButton+AixCategory.h */,
 				CE0290591FAB48A90028752F /* UIButton+AixCategory.m */,
+				CE4417FC1FC80BCF006FEF52 /* UIScrollView+AixCategory.h */,
+				CE4417FD1FC80BCF006FEF52 /* UIScrollView+AixCategory.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -250,13 +278,13 @@
 		F64BEB941D9E42EE004A1744 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = liuhongnian;
 				TargetAttributes = {
 					F64BEB9B1D9E42EE004A1744 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 6C2R3R9CB5;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = FF7PAJJZ26;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -303,6 +331,7 @@
 				F6D05EEB1DBF824B00B1055C /* NSData+AixCategory.m in Sources */,
 				CE360FD21FA84626001E4733 /* UILabel+AixCategory.m in Sources */,
 				CE80C5DF1FB0322E00178B07 /* NSNumber+AixCategory.m in Sources */,
+				CEC56F101FD62ACC003D993C /* GTMBase64.m in Sources */,
 				F64BEBA71D9E42EE004A1744 /* ViewController.m in Sources */,
 				F6125C321DA7C35D007DCEEA /* NSString+AixCategory.m in Sources */,
 				F614FB761DCA1D25000C1442 /* UIActionSheet+AixCategory.m in Sources */,
@@ -313,6 +342,7 @@
 				F6125C2F1DA7C251007DCEEA /* UIColor+AixCategory.m in Sources */,
 				F6D05EF41DBF902300B1055C /* NSBundle+AixCategory.m in Sources */,
 				F64BEBA41D9E42EE004A1744 /* AppDelegate.m in Sources */,
+				CE4417FE1FC80BCF006FEF52 /* UIScrollView+AixCategory.m in Sources */,
 				F65FF7CF1E1D187C00F7B1C8 /* UIControl+AixCategory.m in Sources */,
 				F614FB7C1DCA2233000C1442 /* AixDebugLog.m in Sources */,
 				F6D05EF11DBF8FB200B1055C /* NSMutableDictionary+AixCategory.m in Sources */,
@@ -455,14 +485,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6C2R3R9CB5;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FF7PAJJZ26;
 				INFOPLIST_FILE = AixCategorys/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cz001.AixCategorys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fbe829f5-ed57-44d4-ae97-834011b5a6f1";
-				PROVISIONING_PROFILE_SPECIFIER = "*";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -470,12 +502,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FF7PAJJZ26;
 				INFOPLIST_FILE = AixCategorys/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cz001.AixCategorys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

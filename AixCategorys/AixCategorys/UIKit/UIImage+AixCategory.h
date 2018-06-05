@@ -38,4 +38,7 @@
                               maskImage:(nullable UIImage *)maskImage;
 
 
++ (nullable UIImage *)x_imageWithColor:(UIColor *)color size:(CGSize)size;
+
+
 @end

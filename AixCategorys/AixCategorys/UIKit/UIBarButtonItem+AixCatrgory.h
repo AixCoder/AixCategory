@@ -10,7 +10,9 @@
 
 @interface UIBarButtonItem (AixCatrgory)
 
-- (instancetype)aix_initWithImage:(UIImage *)image style:(UIBarButtonItemStyle) style handler:(void(^)(id sender))action NS_REPLACES_RECEIVER;
+- (instancetype)aix_initWithImage:(UIImage *)image
+                            style:(UIBarButtonItemStyle) style
+                          handler:(void(^)(id sender))action NS_REPLACES_RECEIVER;
 
 
 @end

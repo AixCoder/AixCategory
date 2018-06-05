@@ -507,6 +507,20 @@ static inline CGFloat DegreesToRadians(CGFloat degrees) {
     UIGraphicsEndImageContext();
     return outputImage;
 }
+
++ (UIImage *)x_imageWithColor:(UIColor *)color size:(CGSize)size
+{
+    if (!color || size.width <= 0 || size.height <= 0) return nil;
+    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, color.CGColor);
+    CGContextFillRect(context, rect);
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
 // Helper function to handle deferred cleanup of a buffer.
 static void _yy_cleanupBuffer(void *userData, void *buf_data) {
     free(buf_data);

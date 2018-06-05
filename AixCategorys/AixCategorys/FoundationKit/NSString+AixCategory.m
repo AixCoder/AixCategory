@@ -9,6 +9,7 @@
 #import "NSString+AixCategory.h"
 #import "NSData+AixCategory.h"
 #import <CommonCrypto/CommonDigest.h>
+#import "GTMBase64.h"
 
 @implementation NSString (AixCategory)
 
@@ -374,6 +375,18 @@
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
     return [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
     
+}
+
+- (NSString *)x_encodeToGMBase64
+{
+    if ([self isEmpty]) {
+        return nil;
+    }
+    
+    NSData * data = [self dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    data = [GTMBase64 encodeData:data];
+    NSString * base64 = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return base64;
 }
 
 - (NSString *)aix_decodeBase64
