@@ -160,17 +160,11 @@
 		F64BEB9E1D9E42EE004A1744 /* AixCategorys */ = {
 			isa = PBXGroup;
 			children = (
+				F690886120D2256600B9A08A /* AixCategorys */,
 				F64BEBA21D9E42EE004A1744 /* AppDelegate.h */,
 				F64BEBA31D9E42EE004A1744 /* AppDelegate.m */,
 				F64BEBA51D9E42EE004A1744 /* ViewController.h */,
 				F64BEBA61D9E42EE004A1744 /* ViewController.m */,
-				F614FB3F1DCA1206000C1442 /* AixCategorysHeads.h */,
-				F614FB421DCA12BD000C1442 /* AixCategorysMacro.h */,
-				F614FB7A1DCA2233000C1442 /* AixDebugLog.h */,
-				F614FB7B1DCA2233000C1442 /* AixDebugLog.m */,
-				CEC56F0B1FD62AB2003D993C /* ThirdParty */,
-				F64BEBB71D9E4411004A1744 /* UIKit */,
-				F64BEBB61D9E43E1004A1744 /* FoundationKit */,
 				F64BEBA81D9E42EE004A1744 /* Main.storyboard */,
 				F64BEBAB1D9E42EE004A1744 /* Assets.xcassets */,
 				F64BEBAD1D9E42EE004A1744 /* LaunchScreen.storyboard */,
@@ -250,6 +244,28 @@
 				CE4417FD1FC80BCF006FEF52 /* UIScrollView+AixCategory.m */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F690886020D2250500B9A08A /* AixCategorysHeads */ = {
+			isa = PBXGroup;
+			children = (
+				F614FB3F1DCA1206000C1442 /* AixCategorysHeads.h */,
+				F614FB421DCA12BD000C1442 /* AixCategorysMacro.h */,
+				F614FB7A1DCA2233000C1442 /* AixDebugLog.h */,
+				F614FB7B1DCA2233000C1442 /* AixDebugLog.m */,
+			);
+			path = AixCategorysHeads;
+			sourceTree = "<group>";
+		};
+		F690886120D2256600B9A08A /* AixCategorys */ = {
+			isa = PBXGroup;
+			children = (
+				F690886020D2250500B9A08A /* AixCategorysHeads */,
+				CEC56F0B1FD62AB2003D993C /* ThirdParty */,
+				F64BEBB71D9E4411004A1744 /* UIKit */,
+				F64BEBB61D9E43E1004A1744 /* FoundationKit */,
+			);
+			path = AixCategorys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
