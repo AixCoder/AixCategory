@@ -10,12 +10,20 @@
 
 @implementation NSArray (AixCategory)
 
-- (id)aix_safeObjectAtIndex:(NSUInteger)index
+- (id)x_safeObjectAtIndex:(NSUInteger)index
 {
     if([self count] > 0 && [self count] > index)
         return [self objectAtIndex:index];
     else
         return nil;
+}
+
+- (id)x_randomObject
+{
+    if (self.count) {
+        return self[arc4random_uniform((uint32_t)self.count)];
+    }
+    return nil;
 }
 
 @end

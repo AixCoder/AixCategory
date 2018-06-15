@@ -13,4 +13,8 @@
 @property (nonatomic,readonly) NSData *MD5;
 @property (nonatomic,readonly) NSString *MD5String;
 
+- (nullable NSData*)x_gzipInflate;
+
+- (nullable NSData*)x_gzipDeflate;
+
 @end

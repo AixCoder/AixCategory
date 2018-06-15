@@ -23,4 +23,12 @@
     return nil;
 }
 
+- (BOOL)x_containsObjectForKey:(id)key
+{
+    if (key) {
+        return self[key] != nil;
+    }
+    return NO;
+}
+
 @end
