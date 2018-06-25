@@ -10,6 +10,22 @@
 
 @interface NSArray (AixCategory)
 
-- (id)aix_safeObjectAtIndex:(NSUInteger)index;
+
+/**
+ 防止越界
+
+ @param index <#index description#>
+ @return <#return value description#>
+ */
+- (id)x_safeObjectAtIndex:(NSUInteger)index;
+
+
+/**
+ 随机读取其中一个元素
+
+ @return 随机值
+ */
+- (id)x_randomObject;
+
 
 @end

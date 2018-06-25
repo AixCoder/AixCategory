@@ -311,4 +311,12 @@ NSLocalizedStringFromTableInBundle(key, @"NSDateTimeAgo", [NSBundle bundleWithPa
 }
 
 
+- (BOOL)isToday
+{
+    if (fabs(self.timeIntervalSinceNow) >= 60 * 60 * 24) return NO;
+    return [NSDate new].day == self.day;
+}
+
+
+
 @end

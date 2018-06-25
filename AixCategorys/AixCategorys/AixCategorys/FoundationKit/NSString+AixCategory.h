@@ -20,6 +20,10 @@
 @property (nonatomic,readonly ) NSString * SHA256;
 @property (nonatomic,readonly ) NSString * SHA512;
 
+@property (nonatomic,readonly) NSString *APPBundleID;
+@property (nonatomic,readonly) NSString *APPVersion;
+@property (nonatomic,readonly) NSString *APPBuildVersion;
+
 - (BOOL)isEmpty;
 - (BOOL)isNotEmpty;
 - (BOOL)isNormal;

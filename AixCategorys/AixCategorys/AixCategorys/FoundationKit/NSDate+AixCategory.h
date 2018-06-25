@@ -13,7 +13,11 @@
 @property (nonatomic, readonly) NSInteger x_month; ///< Month component (1~12)
 @property (nonatomic, readonly) NSInteger x_day; ///< Day component (1~31)
 
+@property (nonatomic,readonly) BOOL isToday;
+
 - (NSString *)x_timeAgo;// * 返回x分钟前/x小时前/昨天/x天前/x个月前/x年前
 - (NSString *)x_timestamp;//时间戳(当前时间)
+
+
 
 @end

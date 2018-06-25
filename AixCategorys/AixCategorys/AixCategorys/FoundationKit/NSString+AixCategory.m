@@ -117,6 +117,21 @@
     return output;
 }
 
+- (NSString *)APPBundleID
+{
+    return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleIdentifier"];
+}
+
+- (NSString *)APPVersion
+{
+    return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+}
+
+- (NSString *)APPBuildVersion
+{
+    return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
+
+}
 
 - (BOOL)isEmpty
 {

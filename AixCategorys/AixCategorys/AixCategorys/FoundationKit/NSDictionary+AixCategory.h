@@ -12,4 +12,6 @@
 
 - (nullable NSString *)toJsonString;
 
+- (BOOL)x_containsObjectForKey:(id)key;
+
 @end
