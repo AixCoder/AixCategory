@@ -13,5 +13,9 @@
 - (nullable NSString *)toJsonString;
 
 - (BOOL)x_containsObjectForKey:(id)key;
+//safe value for key
+- (NSString *)x_stringValueForKey:(id)key;
+- (NSArray *)x_arrayValueForKey:(id)key;
+- (NSDictionary*)x_dicValueForKey:(id)key;
 
 @end
