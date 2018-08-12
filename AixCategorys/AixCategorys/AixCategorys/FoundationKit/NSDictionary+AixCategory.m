@@ -31,4 +31,53 @@
     return NO;
 }
 
+- (NSString *)x_stringValueForKey:(id)key
+{
+    NSString *stringValue = self[key];
+    
+    if (![self _isNull:stringValue] && stringValue) {
+        if ([stringValue isKindOfClass:[NSString class]] || [stringValue isKindOfClass:[NSNumber class]]) {
+            return [NSString stringWithFormat:@"%@",stringValue];
+        }else{
+            return nil;
+        }
+    }
+    return nil;
+}
+
+- (NSArray *)x_arrayValueForKey:(id)key
+{
+    NSArray *array = self[key];
+    if (array && ![self _isNull:array]) {
+        if ([array isKindOfClass:[NSArray class]]) {
+            return array;
+        }else{
+            return nil;
+        }
+    }
+    
+    return nil;
+    
+}
+
+- (NSDictionary *)x_dicValueForKey:(id)key
+{
+    NSDictionary *dic = self[key];
+    if (dic &&
+        ![self _isNull:dic] &&
+        [dic isKindOfClass:[NSDictionary class]]) {
+        return dic;
+    }
+    
+    return nil;
+}
+
+- (BOOL)_isNull:(id)object
+{
+    if ([object isEqual:[NSNull null]]) {
+        return YES;
+    }
+    return NO;
+}
+
 @end

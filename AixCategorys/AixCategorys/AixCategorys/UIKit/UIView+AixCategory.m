@@ -328,3 +328,55 @@ void AixSwizzle(Class c, SEL orig, SEL new) {
 }
 
 @end
+
+@implementation UIView(Xib_Inspectable)
+
+- (void)setCornerRadiusIB:(CGFloat)cornerRadiusIB
+{
+    if (cornerRadiusIB < 0) {
+        return;
+    }
+    
+    objc_setAssociatedObject(self, @selector(cornerRadiusIB), @(cornerRadiusIB), OBJC_ASSOCIATION_ASSIGN);
+    self.layer.cornerRadius = cornerRadiusIB;
+    self.layer.masksToBounds = YES;
+    
+}
+
+- (CGFloat)cornerRadiusIB
+{
+    return [objc_getAssociatedObject(self, _cmd) floatValue];
+}
+
+- (void)setBorderWidthIB:(CGFloat)borderWidthIB
+{
+    if (borderWidthIB < 0) {
+        return;
+    }
+    objc_setAssociatedObject(self, @selector(borderWidthIB), @(borderWidthIB), OBJC_ASSOCIATION_ASSIGN);
+    self.layer.borderWidth = borderWidthIB;
+    self.layer.masksToBounds = YES;
+    
+}
+
+- (CGFloat)borderWidthIB
+{
+    return  [objc_getAssociatedObject(self, _cmd) floatValue];
+}
+
+- (UIColor *)borderColorIB
+{
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+- (void)setBorderColorIB:(UIColor *)borderColorIB
+{
+    if (borderColorIB) {
+        
+        objc_setAssociatedObject(self, @selector(borderColorIB), borderColorIB, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        
+        self.layer.borderColor = borderColorIB.CGColor;
+    }
+}
+
+@end

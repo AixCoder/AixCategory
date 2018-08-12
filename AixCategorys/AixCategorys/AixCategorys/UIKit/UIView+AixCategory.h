@@ -93,6 +93,17 @@ typedef void (^LongPressActionBlock)(UILongPressGestureRecognizer *gestureRecogi
 /**
  Centers the view to its parent view (if exists)
  */
+
 -(void) centerToParent;
+
+
+@end
+
+@interface UIView(Xib_Inspectable)
+
+@property (nonatomic,assign) IBInspectable CGFloat cornerRadiusIB;
+@property (nonatomic,assign) IBInspectable CGFloat borderWidthIB;
+
+@property (nonatomic,strong) IBInspectable UIColor *borderColorIB;
 
 @end

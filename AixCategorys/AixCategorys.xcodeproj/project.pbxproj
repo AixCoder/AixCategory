@@ -32,6 +32,7 @@
 		F64BEBC21D9E53E8004A1744 /* UIApplication+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F64BEBC11D9E53E8004A1744 /* UIApplication+AixCategory.m */; };
 		F65FF7CF1E1D187C00F7B1C8 /* UIControl+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F65FF7CE1E1D187C00F7B1C8 /* UIControl+AixCategory.m */; };
 		F66AF5021DEFDE1E001EDF19 /* NSDictionary+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F66AF5011DEFDE1E001EDF19 /* NSDictionary+AixCategory.m */; };
+		F688499220DCB7930034456E /* CALayer+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F688499120DCB7930034456E /* CALayer+AixCategory.m */; };
 		F6C6DB1B1DCB0371001FC5EA /* UIGestureRecognizer+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C6DB1A1DCB0371001FC5EA /* UIGestureRecognizer+AixCategory.m */; };
 		F6D05EE51DBF80EF00B1055C /* UIViewController+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D05EE41DBF80EF00B1055C /* UIViewController+AixCategory.m */; };
 		F6D05EE81DBF81EF00B1055C /* NSArray+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D05EE71DBF81EF00B1055C /* NSArray+AixCategory.m */; };
@@ -94,6 +95,8 @@
 		F65FF7CE1E1D187C00F7B1C8 /* UIControl+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+AixCategory.m"; sourceTree = "<group>"; };
 		F66AF5001DEFDE1E001EDF19 /* NSDictionary+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+AixCategory.h"; sourceTree = "<group>"; };
 		F66AF5011DEFDE1E001EDF19 /* NSDictionary+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+AixCategory.m"; sourceTree = "<group>"; };
+		F688499020DCB7930034456E /* CALayer+AixCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+AixCategory.h"; sourceTree = "<group>"; };
+		F688499120DCB7930034456E /* CALayer+AixCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+AixCategory.m"; sourceTree = "<group>"; };
 		F6C6DB191DCB0371001FC5EA /* UIGestureRecognizer+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+AixCategory.h"; sourceTree = "<group>"; };
 		F6C6DB1A1DCB0371001FC5EA /* UIGestureRecognizer+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+AixCategory.m"; sourceTree = "<group>"; };
 		F6D05EE31DBF80EF00B1055C /* UIViewController+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AixCategory.h"; sourceTree = "<group>"; };
@@ -246,6 +249,15 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		F688498F20DCB75D0034456E /* QuartzCore */ = {
+			isa = PBXGroup;
+			children = (
+				F688499020DCB7930034456E /* CALayer+AixCategory.h */,
+				F688499120DCB7930034456E /* CALayer+AixCategory.m */,
+			);
+			path = QuartzCore;
+			sourceTree = "<group>";
+		};
 		F690886020D2250500B9A08A /* AixCategorysHeads */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +272,7 @@
 		F690886120D2256600B9A08A /* AixCategorys */ = {
 			isa = PBXGroup;
 			children = (
+				F688498F20DCB75D0034456E /* QuartzCore */,
 				F690886020D2250500B9A08A /* AixCategorysHeads */,
 				CEC56F0B1FD62AB2003D993C /* ThirdParty */,
 				F64BEBB71D9E4411004A1744 /* UIKit */,
@@ -365,6 +378,7 @@
 				F6D05EE81DBF81EF00B1055C /* NSArray+AixCategory.m in Sources */,
 				F64BEBBA1D9E4493004A1744 /* UIDevice+AixCategory.m in Sources */,
 				F6D05EEE1DBF82D700B1055C /* NSMutableArray+AixCategory.m in Sources */,
+				F688499220DCB7930034456E /* CALayer+AixCategory.m in Sources */,
 				F6125C291DA7787E007DCEEA /* UIView+AixCategory.m in Sources */,
 				CE02905A1FAB48A90028752F /* UIButton+AixCategory.m in Sources */,
 				F6125C2C1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m in Sources */,
