@@ -39,9 +39,32 @@
         if ([stringValue isKindOfClass:[NSString class]] || [stringValue isKindOfClass:[NSNumber class]]) {
             return [NSString stringWithFormat:@"%@",stringValue];
         }else{
-            return nil;
+            return @"";
         }
     }
+    
+    NSLog(@"dictionary not have key:%@",key);
+
+    return @"";
+}
+
+- (NSNumber *)x_numberForKey:(id)key
+{
+    id value = self[key];
+    if (!value || [self _isNull:value]) {
+        return nil;
+    }
+    
+    if ([value isKindOfClass:[NSNumber class]]) {
+        return value;
+    }
+    
+    if ([value isKindOfClass:[NSString class]]) {
+        NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+        [f setNumberStyle:NSNumberFormatterDecimalStyle];
+        return [f numberFromString:(NSString*)value];
+    }
+    
     return nil;
 }
 
@@ -52,24 +75,46 @@
         if ([array isKindOfClass:[NSArray class]]) {
             return array;
         }else{
-            return nil;
+            return @[];
         }
     }
-    
-    return nil;
+    NSLog(@"dictionary not have key:%@",key);
+    return @[];
     
 }
 
-- (NSDictionary *)x_dicValueForKey:(id)key
+- (NSDictionary *)x_dictionaryValueForKey:(id)key
 {
     NSDictionary *dic = self[key];
     if (dic &&
-        ![self _isNull:dic] &&
-        [dic isKindOfClass:[NSDictionary class]]) {
-        return dic;
+        ![self _isNull:dic] ) {
+        if ([dic isKindOfClass:[NSDictionary class]]) {
+            return dic;
+        }else{
+            return @{};
+        }
     }
+    NSLog(@"dictionary not have key:%@",key);
+    return @{};
+}
+
+- (BOOL)x_boolForKey:(id)key
+{
+    id value = [self objectForKey:key];
     
-    return nil;
+    if (value == nil || value == [NSNull null])
+    {
+        return NO;
+    }
+    if ([value isKindOfClass:[NSNumber class]])
+    {
+        return [value boolValue];
+    }
+    if ([value isKindOfClass:[NSString class]])
+    {
+        return [value boolValue];
+    }
+    return NO;
 }
 
 - (BOOL)_isNull:(id)object

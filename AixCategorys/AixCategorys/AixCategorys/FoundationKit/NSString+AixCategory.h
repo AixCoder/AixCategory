@@ -38,10 +38,10 @@
 - (BOOL)isEmail;
 - (BOOL)isWebURL;
 - (BOOL)isValidPostalcode;// *  邮政编码
-- (BOOL)x_isCarNumberPlate;
-
-
+- (BOOL)x_isCarNumberPlate;//车牌号
 - (BOOL)isIPAddress;
+- (BOOL)x_isIDCardNumber;//验证身份证号码
+- (BOOL)x_isBankCardNumber;//银行卡号码
 
 /**
  获得汉字的拼音
@@ -69,8 +69,10 @@
  */
 - (NSString*)aix_trimmingWhitespace;
 - (NSString*)aix_trimmingWhitespaceAndNewlines;
-- (CGFloat)x_heightForFont:(UIFont*)font width:(CGFloat)width;
 
+- (CGFloat)x_heightForFont:(UIFont*)font width:(CGFloat)width;
+//反转字符串
++ (NSString *)x_reverseString:(NSString*)string;
 
 @end
 
@@ -82,7 +84,11 @@
 @property (nonatomic,readonly) NSURL *cachesURL;
 @property (nonatomic,readonly) NSString *cachesPath;
 
+@end
 
+@interface NSString (AixJson)
+//json字符串转换为字典
+- (NSDictionary *)x_toJsonDictionary;
 
 @end
 

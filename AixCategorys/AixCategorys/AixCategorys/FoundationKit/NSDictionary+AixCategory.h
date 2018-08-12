@@ -14,4 +14,20 @@
 
 - (BOOL)x_containsObjectForKey:(id _Nullable )key;
 
+- (NSString *_Nonnull)x_stringValueForKey:(id _Nullable )key;
+
+- (NSNumber *_Nullable)x_numberForKey:(id _Nullable )key;
+
+- (NSArray *_Nonnull)x_arrayValueForKey:(id _Nullable )key;
+
+- (NSDictionary *_Nonnull)x_dictionaryValueForKey:(id _Nullable )key;
+
+- (BOOL)x_boolForKey:(id _Nullable )key;
+
+
 @end
+
+
+
+
+
