@@ -497,4 +497,9 @@
 }
 
 
++ (NSString *)xTemporaryPath
+{
+    return NSTemporaryDirectory();
+}
+
 @end

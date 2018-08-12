@@ -12,6 +12,6 @@
 
 - (nullable NSString *)toJsonString;
 
-- (BOOL)x_containsObjectForKey:(id)key;
+- (BOOL)x_containsObjectForKey:(id _Nullable )key;
 
 @end

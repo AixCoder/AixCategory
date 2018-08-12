@@ -78,8 +78,11 @@
 
 + (NSURL *)documentsURL;
 + (NSString *)documentsPath;
++ (NSString *)xTemporaryPath;
 @property (nonatomic,readonly) NSURL *cachesURL;
 @property (nonatomic,readonly) NSString *cachesPath;
+
+
 
 @end
 
