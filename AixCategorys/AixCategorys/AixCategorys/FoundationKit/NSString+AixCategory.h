@@ -27,7 +27,9 @@
 - (BOOL)isEmpty;
 - (BOOL)isNotEmpty;
 - (BOOL)isNormal;
-
+- (BOOL)x_isPureInt;
+- (BOOL)x_isPureFloat;
+- (BOOL)isPureNumberCharacters;
 - (BOOL)isTelephone;    // match telephone
 - (BOOL)x_isMobilephone;//手机号判断，粗略判断
 - (BOOL)x_isRealMobilephone;  //手机号判断（精确判断真实性）

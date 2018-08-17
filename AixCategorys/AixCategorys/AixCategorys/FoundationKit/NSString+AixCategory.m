@@ -162,7 +162,41 @@
     return [pred evaluateWithObject:self];
 
 }
+//判断是否为整形：
 
+- (BOOL)x_isPureInt{
+    
+    NSScanner* scan = [NSScanner scannerWithString:self];
+    
+    int val;
+    
+    return [scan scanInt:&val] && [scan isAtEnd];
+    
+}
+
+- (BOOL)isPureNumberCharacters{
+    
+    NSString * string= [self stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
+    
+    if(string.length >0){
+        return NO;
+    }
+    
+    return YES;
+    
+}
+
+//判断是否为浮点形：
+
+- (BOOL)x_isPureFloat{
+    
+    NSScanner* scan = [NSScanner scannerWithString:self];
+    
+    float val;
+    
+    return [scan scanFloat:&val] && [scan isAtEnd];
+    
+}
 - (BOOL)isTelephone
 {
     NSString * MOBILE = @"^1(3[0-9]|5[0-35-9]|8[025-9])\\d{8}$";
