@@ -12,4 +12,6 @@
 
 + (instancetype)aix_topViewController;
 
+- (BOOL)x_isVisible;
+
 @end

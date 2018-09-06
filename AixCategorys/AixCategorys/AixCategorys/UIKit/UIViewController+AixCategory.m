@@ -43,5 +43,9 @@
     return nil;
 }
 
+- (BOOL)x_isVisible
+{
+    return ([self isViewLoaded] && self.view.window);
+}
 
 @end
