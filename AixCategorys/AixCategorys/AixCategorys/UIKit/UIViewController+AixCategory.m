@@ -48,4 +48,28 @@
     return ([self isViewLoaded] && self.view.window);
 }
 
+- (void)showAlertViewControllerWithTitle:(NSString *)title
+                                 message:(NSString *)message
+                            cancelAction:(void(^)(void))cancelHandle
+                             cancelTitle:(NSString *)cancel_title
+                              doneAction:(void(^)(void))doneHandle
+                               doneTitle:(NSString *)done_title
+{
+    UIAlertController *alertViewController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        cancelHandle();
+    }];
+    
+    UIAlertAction *doneAction = [UIAlertAction actionWithTitle:@"确定" style: UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        doneHandle();
+    }];
+    
+    [alertViewController addAction:cancelAction];
+    [alertViewController addAction:doneAction];
+    [self presentViewController:alertViewController animated:YES completion:^{
+        
+    }];
+    
+}
+
 @end

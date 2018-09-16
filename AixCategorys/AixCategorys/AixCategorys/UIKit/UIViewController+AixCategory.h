@@ -14,4 +14,11 @@
 
 - (BOOL)x_isVisible;
 
+- (void)showAlertViewControllerWithTitle:(NSString *)title
+                                 message:(NSString *)message
+                            cancelAction:(void(^)(void))cancelHandle
+                             cancelTitle:(NSString *)cancel_title
+                              doneAction:(void(^)(void))doneHandle
+                               doneTitle:(NSString *)done_title;
+
 @end
