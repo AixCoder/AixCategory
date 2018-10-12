@@ -29,7 +29,6 @@
     [self.view addSubview:imgView1];
     imgView1.center = self.view.center;
 
-    
 }
 
 

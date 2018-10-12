@@ -32,6 +32,11 @@ typedef void (^LongPressActionBlock)(UILongPressGestureRecognizer *gestureRecogi
 //移除所有子视图
 - (void)x_removeAllSubviews;
 
+-(void) centerToParent;
+
+- (void)addBordersWithColor:(UIColor * _Nonnull)color
+               CornerRadius:(CGFloat)radius
+                      Width:(CGFloat)width;
 @end
 
 @interface UIView (Positioning)
@@ -93,9 +98,6 @@ typedef void (^LongPressActionBlock)(UILongPressGestureRecognizer *gestureRecogi
 /**
  Centers the view to its parent view (if exists)
  */
-
--(void) centerToParent;
-
 
 @end
 

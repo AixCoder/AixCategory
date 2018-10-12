@@ -305,6 +305,24 @@ void AixSwizzle(Class c, SEL orig, SEL new) {
     return self.bounds.size.height;
 }
 
+- (void)addBordersWithColor:(UIColor * _Nonnull)color
+               CornerRadius:(CGFloat)radius
+                      Width:(CGFloat)width
+{
+    self.layer.borderWidth = width;
+    self.layer.cornerRadius = radius;
+    self.layer.shouldRasterize = NO;
+    self.layer.rasterizationScale = 2;
+    self.layer.edgeAntialiasingMask = kCALayerLeftEdge | kCALayerRightEdge | kCALayerBottomEdge | kCALayerTopEdge;
+    self.clipsToBounds = YES;
+    self.layer.masksToBounds = YES;
+    
+    CGColorSpaceRef space = CGColorSpaceCreateDeviceRGB();
+    CGColorRef cgColor = [color CGColor];
+    self.layer.borderColor = cgColor;
+    CGColorSpaceRelease(space);
+}
+
 // Methods
 -(void)centerToParent{
     if(self.superview){
