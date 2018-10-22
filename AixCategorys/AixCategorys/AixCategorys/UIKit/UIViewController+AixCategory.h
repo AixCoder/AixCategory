@@ -21,4 +21,7 @@
                               doneAction:(void(^)(void))doneHandle
                                doneTitle:(NSString *)done_title;
 
+- (void)x_backToViewController:(NSString *)viewController
+                      animated:(BOOL)animated;
+
 @end

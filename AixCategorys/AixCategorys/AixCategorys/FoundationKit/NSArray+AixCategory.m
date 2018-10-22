@@ -26,4 +26,24 @@
     return nil;
 }
 
+- (NSString *)x_toJSONString
+{
+    
+    if ([NSJSONSerialization isValidJSONObject:self]) {
+        
+        NSError *error;
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self options:0 error:&error];
+        
+        if (error) {
+            NSLog(@"对象转成data出错");
+            return nil;
+        }
+        NSString *jsonStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        return jsonStr;
+        
+        
+    }
+    return nil;
+}
+
 @end

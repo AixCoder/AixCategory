@@ -28,4 +28,12 @@
 - (id)x_randomObject;
 
 
+/**
+ 数组对象转成JSON字符串
+
+ @return json string
+ */
+- (NSString *)x_toJSONString;
+
+
 @end

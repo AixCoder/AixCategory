@@ -72,4 +72,25 @@
     
 }
 
+- (void)x_backToViewController:(NSString *)viewController animated:(BOOL)animated
+{
+    if (self.navigationController) {
+        
+        NSArray *vcArray = self.navigationController.viewControllers;
+        for (UIViewController *subViewController in vcArray) {
+            if ([subViewController isKindOfClass:NSClassFromString(viewController)]) {
+                
+                [self.navigationController popToViewController:subViewController
+                                                      animated:animated];
+                return;
+                
+            }
+        }
+        if (vcArray.count >= 2) {
+            NSLog(@"%@没有成功匹配",viewController);
+            [self.navigationController popViewControllerAnimated:animated];
+        }
+    }
+}
+
 @end
