@@ -48,12 +48,12 @@
     return ([self isViewLoaded] && self.view.window);
 }
 
-- (void)showAlertViewControllerWithTitle:(NSString *)title
-                                 message:(NSString *)message
-                            cancelAction:(void(^)(void))cancelHandle
-                             cancelTitle:(NSString *)cancel_title
-                              doneAction:(void(^)(void))doneHandle
-                               doneTitle:(NSString *)done_title
+- (void)showAlertWithTitle:(NSString *)title
+                   message:(NSString *)message
+               cancelTitle:(NSString *)cancel_title
+              cancelAction:(void(^)(void))cancelHandle
+                 doneTitle:(NSString *)done_title
+                doneAction:(void(^)(void))doneHandle
 {
     UIAlertController *alertViewController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
