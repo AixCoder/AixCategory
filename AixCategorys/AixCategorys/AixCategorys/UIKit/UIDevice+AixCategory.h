@@ -49,4 +49,7 @@
 /// Free memory in byte. (-1 when error occurs)
 @property (nonatomic, readonly) int64_t memoryFree;
 
+#pragma mark wifi Info
+@property (nonatomic, readonly) NSDictionary *wifiInfo;
+
 @end

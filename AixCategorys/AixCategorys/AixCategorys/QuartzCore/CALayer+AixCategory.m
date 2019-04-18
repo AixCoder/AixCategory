@@ -10,6 +10,8 @@
 
 @implementation CALayer (AixCategory)
 
+@dynamic XBorderColor;
+
 - (void)setXBorderColor:(UIColor *)XBorderColor
 {
     self.borderColor = XBorderColor.CGColor;

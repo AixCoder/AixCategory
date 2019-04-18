@@ -33,6 +33,7 @@
 		F65FF7CF1E1D187C00F7B1C8 /* UIControl+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F65FF7CE1E1D187C00F7B1C8 /* UIControl+AixCategory.m */; };
 		F66AF5021DEFDE1E001EDF19 /* NSDictionary+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F66AF5011DEFDE1E001EDF19 /* NSDictionary+AixCategory.m */; };
 		F688499220DCB7930034456E /* CALayer+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F688499120DCB7930034456E /* CALayer+AixCategory.m */; };
+		F6A41DC4224B04D700728605 /* AixButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A41DC3224B04D700728605 /* AixButton.m */; };
 		F6C6DB1B1DCB0371001FC5EA /* UIGestureRecognizer+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C6DB1A1DCB0371001FC5EA /* UIGestureRecognizer+AixCategory.m */; };
 		F6D05EE51DBF80EF00B1055C /* UIViewController+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D05EE41DBF80EF00B1055C /* UIViewController+AixCategory.m */; };
 		F6D05EE81DBF81EF00B1055C /* NSArray+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D05EE71DBF81EF00B1055C /* NSArray+AixCategory.m */; };
@@ -97,6 +98,8 @@
 		F66AF5011DEFDE1E001EDF19 /* NSDictionary+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+AixCategory.m"; sourceTree = "<group>"; };
 		F688499020DCB7930034456E /* CALayer+AixCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+AixCategory.h"; sourceTree = "<group>"; };
 		F688499120DCB7930034456E /* CALayer+AixCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+AixCategory.m"; sourceTree = "<group>"; };
+		F6A41DC2224B04D700728605 /* AixButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AixButton.h; sourceTree = "<group>"; };
+		F6A41DC3224B04D700728605 /* AixButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AixButton.m; sourceTree = "<group>"; };
 		F6C6DB191DCB0371001FC5EA /* UIGestureRecognizer+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+AixCategory.h"; sourceTree = "<group>"; };
 		F6C6DB1A1DCB0371001FC5EA /* UIGestureRecognizer+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+AixCategory.m"; sourceTree = "<group>"; };
 		F6D05EE31DBF80EF00B1055C /* UIViewController+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AixCategory.h"; sourceTree = "<group>"; };
@@ -243,6 +246,8 @@
 				F65FF7CE1E1D187C00F7B1C8 /* UIControl+AixCategory.m */,
 				CE0290581FAB48A90028752F /* UIButton+AixCategory.h */,
 				CE0290591FAB48A90028752F /* UIButton+AixCategory.m */,
+				F6A41DC2224B04D700728605 /* AixButton.h */,
+				F6A41DC3224B04D700728605 /* AixButton.m */,
 				CE4417FC1FC80BCF006FEF52 /* UIScrollView+AixCategory.h */,
 				CE4417FD1FC80BCF006FEF52 /* UIScrollView+AixCategory.m */,
 			);
@@ -357,6 +362,7 @@
 				F6D05EE51DBF80EF00B1055C /* UIViewController+AixCategory.m in Sources */,
 				F614FB3B1DCA0A41000C1442 /* UIWindow+AixCategory.m in Sources */,
 				CE360FCF1FA844DA001E4733 /* UIImageView+AixCategory.m in Sources */,
+				F6A41DC4224B04D700728605 /* AixButton.m in Sources */,
 				F6D05EEB1DBF824B00B1055C /* NSData+AixCategory.m in Sources */,
 				CE360FD21FA84626001E4733 /* UILabel+AixCategory.m in Sources */,
 				CE80C5DF1FB0322E00178B07 /* NSNumber+AixCategory.m in Sources */,

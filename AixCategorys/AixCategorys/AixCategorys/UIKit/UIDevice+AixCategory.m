@@ -9,6 +9,7 @@
 #import "UIDevice+AixCategory.h"
 #import <sys/sysctl.h>
 #import <mach/mach.h>
+#import <SystemConfiguration/CaptiveNetwork.h>
 
 @implementation UIDevice (AixCategory)
 
@@ -311,5 +312,21 @@
     }
 }
 
+- (NSDictionary *)wifiInfo
+{
+    NSArray *ifs = (__bridge_transfer id)CNCopySupportedInterfaces();
+    
+    if (ifs == nil) {
+        return nil;
+    }
+    for (NSString *ifnam in ifs) {
+        NSDictionary *info = (__bridge_transfer id)CNCopyCurrentNetworkInfo((__bridge CFStringRef)ifnam);
+        if (info != nil) {
+            return info;
+        }
+    }
+    
+    return nil;
+}
 
 @end
