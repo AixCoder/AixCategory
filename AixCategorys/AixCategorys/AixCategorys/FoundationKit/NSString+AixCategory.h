@@ -73,6 +73,8 @@
 - (NSString*)aix_trimmingWhitespaceAndNewlines;
 
 - (CGFloat)x_heightForFont:(UIFont*)font width:(CGFloat)width;
+- (CGFloat)x_widthForFont:(UIFont *)font height:(CGFloat)height;//算出字体的宽度
+
 //反转字符串
 + (NSString *)x_reverseString:(NSString*)string;
 

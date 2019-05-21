@@ -18,7 +18,6 @@
 		F6125C291DA7787E007DCEEA /* UIView+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C281DA7787E007DCEEA /* UIView+AixCategory.m */; };
 		F6125C2C1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C2B1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m */; };
 		F6125C2F1DA7C251007DCEEA /* UIColor+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C2E1DA7C251007DCEEA /* UIColor+AixCategory.m */; };
-		F6125C321DA7C35D007DCEEA /* NSString+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C311DA7C35D007DCEEA /* NSString+AixCategory.m */; };
 		F614FB3B1DCA0A41000C1442 /* UIWindow+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F614FB3A1DCA0A41000C1442 /* UIWindow+AixCategory.m */; };
 		F614FB761DCA1D25000C1442 /* UIActionSheet+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F614FB751DCA1D25000C1442 /* UIActionSheet+AixCategory.m */; };
 		F614FB7C1DCA2233000C1442 /* AixDebugLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F614FB7B1DCA2233000C1442 /* AixDebugLog.m */; };
@@ -42,6 +41,7 @@
 		F6D05EF11DBF8FB200B1055C /* NSMutableDictionary+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D05EF01DBF8FB200B1055C /* NSMutableDictionary+AixCategory.m */; };
 		F6D05EF41DBF902300B1055C /* NSBundle+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D05EF31DBF902300B1055C /* NSBundle+AixCategory.m */; };
 		F6D05EF71DBF911D00B1055C /* NSDate+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D05EF61DBF911D00B1055C /* NSDate+AixCategory.m */; };
+		F6D4968B22940597006333A6 /* NSString+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D4968A22940597006333A6 /* NSString+AixCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,8 +68,6 @@
 		F6125C2B1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+AixCatrgory.m"; sourceTree = "<group>"; };
 		F6125C2D1DA7C251007DCEEA /* UIColor+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AixCategory.h"; sourceTree = "<group>"; };
 		F6125C2E1DA7C251007DCEEA /* UIColor+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AixCategory.m"; sourceTree = "<group>"; };
-		F6125C301DA7C35D007DCEEA /* NSString+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AixCategory.h"; sourceTree = "<group>"; };
-		F6125C311DA7C35D007DCEEA /* NSString+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AixCategory.m"; sourceTree = "<group>"; };
 		F614FB391DCA0A41000C1442 /* UIWindow+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+AixCategory.h"; sourceTree = "<group>"; };
 		F614FB3A1DCA0A41000C1442 /* UIWindow+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+AixCategory.m"; sourceTree = "<group>"; };
 		F614FB3F1DCA1206000C1442 /* AixCategorysHeads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AixCategorysHeads.h; sourceTree = "<group>"; };
@@ -116,6 +114,8 @@
 		F6D05EF31DBF902300B1055C /* NSBundle+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+AixCategory.m"; sourceTree = "<group>"; };
 		F6D05EF51DBF911D00B1055C /* NSDate+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+AixCategory.h"; sourceTree = "<group>"; };
 		F6D05EF61DBF911D00B1055C /* NSDate+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+AixCategory.m"; sourceTree = "<group>"; };
+		F6D4968922940597006333A6 /* NSString+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AixCategory.h"; sourceTree = "<group>"; };
+		F6D4968A22940597006333A6 /* NSString+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AixCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,8 +191,8 @@
 		F64BEBB61D9E43E1004A1744 /* FoundationKit */ = {
 			isa = PBXGroup;
 			children = (
-				F6125C301DA7C35D007DCEEA /* NSString+AixCategory.h */,
-				F6125C311DA7C35D007DCEEA /* NSString+AixCategory.m */,
+				F6D4968922940597006333A6 /* NSString+AixCategory.h */,
+				F6D4968A22940597006333A6 /* NSString+AixCategory.m */,
 				F6D05EE61DBF81EF00B1055C /* NSArray+AixCategory.h */,
 				F6D05EE71DBF81EF00B1055C /* NSArray+AixCategory.m */,
 				F6D05EE91DBF824B00B1055C /* NSData+AixCategory.h */,
@@ -317,7 +317,7 @@
 				TargetAttributes = {
 					F64BEB9B1D9E42EE004A1744 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = FF7PAJJZ26;
+						DevelopmentTeam = TKB68T6H29;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -368,7 +368,6 @@
 				CE80C5DF1FB0322E00178B07 /* NSNumber+AixCategory.m in Sources */,
 				CEC56F101FD62ACC003D993C /* GTMBase64.m in Sources */,
 				F64BEBA71D9E42EE004A1744 /* ViewController.m in Sources */,
-				F6125C321DA7C35D007DCEEA /* NSString+AixCategory.m in Sources */,
 				F614FB761DCA1D25000C1442 /* UIActionSheet+AixCategory.m in Sources */,
 				F6125C261DA773DE007DCEEA /* UIImage+AixCategory.m in Sources */,
 				F6C6DB1B1DCB0371001FC5EA /* UIGestureRecognizer+AixCategory.m in Sources */,
@@ -379,6 +378,7 @@
 				F64BEBA41D9E42EE004A1744 /* AppDelegate.m in Sources */,
 				CE4417FE1FC80BCF006FEF52 /* UIScrollView+AixCategory.m in Sources */,
 				F65FF7CF1E1D187C00F7B1C8 /* UIControl+AixCategory.m in Sources */,
+				F6D4968B22940597006333A6 /* NSString+AixCategory.m in Sources */,
 				F614FB7C1DCA2233000C1442 /* AixDebugLog.m in Sources */,
 				F6D05EF11DBF8FB200B1055C /* NSMutableDictionary+AixCategory.m in Sources */,
 				F6D05EE81DBF81EF00B1055C /* NSArray+AixCategory.m in Sources */,
@@ -521,9 +521,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FF7PAJJZ26;
+				DEVELOPMENT_TEAM = TKB68T6H29;
 				INFOPLIST_FILE = AixCategorys/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -538,9 +539,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FF7PAJJZ26;
+				DEVELOPMENT_TEAM = TKB68T6H29;
 				INFOPLIST_FILE = AixCategorys/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

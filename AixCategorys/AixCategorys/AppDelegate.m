@@ -31,6 +31,9 @@
         NSLog(@"8.0以上");
     }
     
+    NSDictionary *wifi = [UIDevice currentDevice].wifiInfo;
+    
+    
     
     return YES;
 }
