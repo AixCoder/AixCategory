@@ -19,5 +19,8 @@
 
 - (void)aix_safeInsertObject:(id)obj atIndex:(NSUInteger)index;
 
+/**
+ 打乱数组元素顺序
+ */
 - (void)x_shuffle;
 @end
