@@ -104,6 +104,24 @@ NSLocalizedStringFromTableInBundle(key, @"NSDateTimeAgo", [NSBundle bundleWithPa
     return timeString;
 }
 
+- (NSString *)x_now:(NSString *)format
+{
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:format];
+    
+    NSDate *date_now = [NSDate date];
+    NSString *currentTime = [formatter stringFromDate:date_now];
+    
+    if (currentTime.length == 0) {
+        NSLog(@"时间转换失败");
+        return @"";
+    }
+    
+    return currentTime;
+    
+}
+
 - (NSString *)aix_stringFromFormat:(NSString *)format withValue:(NSInteger)value
 {
     NSString * localeFormat = [NSString stringWithFormat:format, [self getLocaleFormatUnderscoresWithValue:value]];
