@@ -8,11 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger,AixTitleAligment) {
+    AixButtonTitleOnLeft = 0,
+    AixButtonTitleOnBotton,
+};
+
 @interface UIButton (AixCategory)
 
 /** 改变按钮的响应区域,上左下右分别增加或减小多少  正数为增加 负数为减小*/
 @property (nonatomic, assign) UIEdgeInsets clickEdgeInsets;
 
 @property (nonatomic, assign) NSTimeInterval custom_acceptEventInterval;// 给重复点击加间隔
+
+- (void)x_SetButtonTitleAligment:(AixTitleAligment)type;
+
+
 
 @end
