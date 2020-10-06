@@ -18,6 +18,9 @@
 - (NSString *)x_timeAgo;// * 返回x分钟前/x小时前/昨天/x天前/x个月前/x年前
 - (NSString *)x_timestamp;//时间戳(当前时间)
 
+/// 当前时间点按格式转换为字符串
+- (NSString *)x_now:(NSString *)format;
+
 
 
 @end
