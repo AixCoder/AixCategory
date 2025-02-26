@@ -17,4 +17,10 @@
 
 - (nullable NSData*)x_gzipDeflate;
 
+- (NSData *)AES128EncryptWithKey:(NSString *)key
+                             gIv:(NSString *)Iv;///AES加密
+- (NSData *)AES128DecryptWithKey:(NSString *)key
+                             gIv:(NSString *)Iv;   //解密
+
+
 @end

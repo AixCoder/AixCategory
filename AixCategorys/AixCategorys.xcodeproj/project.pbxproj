@@ -14,6 +14,7 @@
 		CE4417FE1FC80BCF006FEF52 /* UIScrollView+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4417FD1FC80BCF006FEF52 /* UIScrollView+AixCategory.m */; };
 		CE80C5DF1FB0322E00178B07 /* NSNumber+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80C5DE1FB0322E00178B07 /* NSNumber+AixCategory.m */; };
 		CEC56F101FD62ACC003D993C /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC56F0E1FD62ACC003D993C /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F60434A2261D83F600FFB472 /* Dictionary+AixCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60434A1261D83F600FFB472 /* Dictionary+AixCategory.swift */; };
 		F6125C261DA773DE007DCEEA /* UIImage+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C251DA773DE007DCEEA /* UIImage+AixCategory.m */; };
 		F6125C291DA7787E007DCEEA /* UIView+AixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C281DA7787E007DCEEA /* UIView+AixCategory.m */; };
 		F6125C2C1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6125C2B1DA7809D007DCEEA /* UIBarButtonItem+AixCatrgory.m */; };
@@ -60,6 +61,8 @@
 		CEC56F0D1FD62ACC003D993C /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		CEC56F0E1FD62ACC003D993C /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		CEC56F0F1FD62ACC003D993C /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		F60434A0261D83F600FFB472 /* AixCategorys-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AixCategorys-Bridging-Header.h"; sourceTree = "<group>"; };
+		F60434A1261D83F600FFB472 /* Dictionary+AixCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+AixCategory.swift"; sourceTree = "<group>"; };
 		F6125C241DA773DE007DCEEA /* UIImage+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AixCategory.h"; sourceTree = "<group>"; };
 		F6125C251DA773DE007DCEEA /* UIImage+AixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AixCategory.m"; sourceTree = "<group>"; };
 		F6125C271DA7787E007DCEEA /* UIView+AixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AixCategory.h"; sourceTree = "<group>"; };
@@ -206,9 +209,11 @@
 				F6D05EF51DBF911D00B1055C /* NSDate+AixCategory.h */,
 				F6D05EF61DBF911D00B1055C /* NSDate+AixCategory.m */,
 				F66AF5001DEFDE1E001EDF19 /* NSDictionary+AixCategory.h */,
+				F60434A1261D83F600FFB472 /* Dictionary+AixCategory.swift */,
 				F66AF5011DEFDE1E001EDF19 /* NSDictionary+AixCategory.m */,
 				CE80C5DD1FB0322E00178B07 /* NSNumber+AixCategory.h */,
 				CE80C5DE1FB0322E00178B07 /* NSNumber+AixCategory.m */,
+				F60434A0261D83F600FFB472 /* AixCategorys-Bridging-Header.h */,
 			);
 			path = FoundationKit;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 					F64BEB9B1D9E42EE004A1744 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = TKB68T6H29;
+						LastSwiftMigration = 1220;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -327,6 +333,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -359,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F64BEBC21D9E53E8004A1744 /* UIApplication+AixCategory.m in Sources */,
+				F60434A2261D83F600FFB472 /* Dictionary+AixCategory.swift in Sources */,
 				F6D05EE51DBF80EF00B1055C /* UIViewController+AixCategory.m in Sources */,
 				F614FB3B1DCA0A41000C1442 /* UIWindow+AixCategory.m in Sources */,
 				CE360FCF1FA844DA001E4733 /* UIImageView+AixCategory.m in Sources */,
@@ -521,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +541,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AixCategorys/AixCategorys/FoundationKit/AixCategorys-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -539,6 +551,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -549,6 +562,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cz001.AixCategorys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AixCategorys/AixCategorys/FoundationKit/AixCategorys-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
